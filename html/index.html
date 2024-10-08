@@ -4,24 +4,22 @@
 <head>
 
   <title>Eric W Setälä</title>
-  <!-- koodisto -->
+  
   <meta charset="utf-8">
-  <!-- skaalaus -->
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="About me, my portfolio & CV">
   <meta name="author" content="EricWS">
 
-  <!-- Navigointipalkki pohja syöte -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 
-  <!-- Linkki ulkopuoliseen tiedostoon -->
+
   <link href="../css/tyyli.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- Navigointipalkki vasemmalla -->
   <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="leftMenu">
     <button onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
     <a href="#osa1" class="w3-bar-item w3-button">Frontpage</a>
@@ -29,7 +27,6 @@
     <a href="#osa3" class="w3-bar-item w3-button">ContactMe</a>
   </div>
 
-  <!-- Navigointipalkki oikealla -->
   <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none; right:0;" id="rightMenu">
     <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
     <a href="#osa1" class="w3-bar-item w3-button">Frontpage</a>
@@ -37,16 +34,12 @@
     <a href="#osa3" class="w3-bar-item w3-button">ContactMe</a>
   </div>
 
-  <!-- Ylävalikko, jossa navigointi-ikonit -->
   <div class="top-navigation">
-    <!-- Vasemman reunan ikoni -->
     <button class="w3-button w3-transparent w3-jumbo left-icon" onclick="openLeftMenu()">&#9776;</button>
 
-    <!-- Oikean reunan ikoni -->
     <button class="w3-button w3-transparent w3-jumbo right-icon" onclick="openRightMenu()">&#9776;</button>
   </div>
 
-  <!-- JavaScript toiminnot navigointipalkkien avaukselle -->
   <script>
     function openLeftMenu() {
       document.getElementById("leftMenu").style.display = "block";
@@ -70,7 +63,7 @@
 </section>
 
   <div class="header">
-    <h1> I AM <br> Eric W SETÄLÄ </h1>
+    <h1> I AM <br> ERIC W SETÄLÄ </h1>
     <div class="image-container">
       <img src="../images/parsta.jpg" alt="Pärstä kuva" width="700" height="900">
     </div> 
@@ -142,11 +135,14 @@
     </p>
 
     <h3>My CV</h3>
-
-    <button class="button" onclick="downloadCV()">
+    
+    <div class="button-container">
+      <button class="button" onclick="downloadCV()">
       <img src="../images/icons8-download-16.png" alt="DownloadIcon">
       <span>Download</span>
-    </button>
+      </button>
+      </div>
+
 
     <script>
       function downloadCV() {
