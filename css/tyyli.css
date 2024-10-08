@@ -66,7 +66,7 @@ img{
     top: 15%;          
     right: 0;        
     width: 250px;    
-    height: 100%;    
+    height: 200%;    
     background-color: #414141;
 }
 
@@ -75,6 +75,24 @@ img{
     justify-content: center; 
     background-color: transparent;
 }
+
+@media screen and (max-width: 700px){
+    .header{
+        scale: 50%;
+        margin-bottom: 70%;
+    }
+    .h3{
+        margin-bottom: 20%;
+    }
+    .logo{
+        scale: 300%;
+    }
+    .button-container{
+        width: 60%;  
+        padding: 30px; 
+    }
+    }
+    
 
 .header h1 {
     margin-right: 5%; 
@@ -107,7 +125,7 @@ h3{
 }
 
 
-/* leipäteksti */
+
 body {
     color: #00ff88; 
     text-align: left;
@@ -165,7 +183,7 @@ text-decoration: none;
     width: 200px;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 5px;
+    margin: 0 auto;
     margin-left: 45%;
     margin-right: 55%;
     margin-bottom: 20%;
@@ -178,15 +196,15 @@ text-decoration: none;
     cursor: pointer;
     display: inline-block;
     position: relative;
-    transition: 0.5s;
-    margin-left: 10px;
-    /* teksti ja kuva */
+    transition: 1s;
+    margin-right: 1%;
   }
 
   .button img {
-    margin-left: 10%;
-    width: 30px;
-    height: 30px;
+    margin-left: 5%;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
   }
 
   .button:hover {
